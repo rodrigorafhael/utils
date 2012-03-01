@@ -2,12 +2,12 @@
 
 # from https://github.com/thoughtbot/laptop
 
-echo "Checking for SSH key, generating one if it doesn't exist ..."
-  [[ -f ~/.ssh/id_rsa.pub ]] || ssh-keygen -t rsa
+#echo "Checking for SSH key, generating one if it doesn't exist ..."
+#  [[ -f ~/.ssh/id_rsa.pub ]] || ssh-keygen -t rsa
 
-echo "Copying public key to clipboard. Paste it into your Github account ..."
-  [[ -f ~/.ssh/id_rsa.pub ]] && cat ~/.ssh/id_rsa.pub | pbcopy
-  open https://github.com/account/ssh
+#echo "Copying public key to clipboard. Paste it into your Github account ..."
+#  [[ -f ~/.ssh/id_rsa.pub ]] && cat ~/.ssh/id_rsa.pub | pbcopy
+#  open https://github.com/account/ssh
 
 echo "Installing Homebrew, a good OS X package manager ..."
   /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
